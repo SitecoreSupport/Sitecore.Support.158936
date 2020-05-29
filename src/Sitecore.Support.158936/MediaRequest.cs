@@ -95,7 +95,7 @@ namespace Sitecore.Support.Resources.Media
       //string text2 = MainUtil.EncodeName(localPath)
       string text2 = localPath;
       // foreach (string current in MediaManager.Provider.Config.MediaPrefixes.Select(new Func<string, string>(MainUtil.DecodeName))
-      foreach (string current in MediaManager.Provider.Config.MediaPrefixes) 
+      foreach (string current in MediaManager.Config.MediaPrefixes) 
       {
         num = text2.IndexOf(current, StringComparison.InvariantCultureIgnoreCase);
         if (num >= 0)
